@@ -11,7 +11,9 @@ int main(void)
     printf("[");
     while (n < size)
     {
-        printf("%d ", arr[n]);
+        printf("%d", arr[n]);
+        if (n < size - 1)
+            printf(", ", arr[n]);
         n++;
     }
     printf("]\n[");
@@ -19,7 +21,9 @@ int main(void)
     n = 0;
     while (n < size)
     {
-        printf("%d ", arr[n]);
+        printf("%d", arr[n]);
+        if (n < size - 1)
+            printf(", ", arr[n]);
         n++;
     }
     printf("]");
